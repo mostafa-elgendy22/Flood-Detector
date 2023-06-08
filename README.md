@@ -1,7 +1,7 @@
 <h1 align="center">Flood-Detector</h1>
 
 # Table of Contents
-1. [Introduction to the Problem](#systems-specifications)
+1. [Introduction to the Problem](#introduction-to-the-problem)
 2. [Dataset Description](#dataset-description)
 3. [Project Pipeline](#project-pipeline)
 4. [Data Preprocessing](#data-preprocessing)
