@@ -36,6 +36,7 @@ The resolution of images is not constant accross the dataset. The average resolu
 
 ![1684662170077](docs/image/README/1684662170077.png)
 
+
 # Data Preprocessing
 The preprocessing pipeline for the classical machine learning models is as follows:
 - Resize the image to the average resolution of the dataset (1352x1794)
@@ -108,6 +109,8 @@ The dataset is split into 80% training and 20% testing. The model is trained on 
 
 ![1684655081808](docs/image/README/1684655081808.png)
 
+<hr>
+
 
 # Deep Learning Models
 1. Convolutional Neural Network (CNN): This model is implemented from scratch using pytorch. The summary of the model is shown in the following figure:
@@ -125,6 +128,7 @@ The dataset is split into 80% training and 20% testing. The model is trained on 
     ![1684656055081](docs/image/README/1684656055081.png)
 
 
+<hr>
 
 2. ResNet-50 (pre-trained model): It is a deep convolutional neural network architecture that was introduced by Microsoft Research in 2015. It is a variant of the ResNet architecture, which stands for "Residual Network," designed to address the challenges of training very deep neural networks. The ResNet-50 model is characterized by its depth and the use of residual connections. It consists of 50 layers, including convolutional layers, pooling layers, fully connected layers, and shortcut connections (residual connections). The residual connections allow for the smooth flow of gradients during training and help alleviate the vanishing gradient problem, enabling the training of very deep networks. This model is fine-tuned by replacing the last fully connected layer with a new one that outputs 2 classes instead of 1000 classes.
 
@@ -142,6 +146,8 @@ The dataset is split into 80% training and 20% testing. The model is trained on 
     Model evaluation (80% training, 10% validation, 10% testing):
 
     ![1684656194702](docs/image/README/1684656194702.png)
+
+<hr>
 
 3. AlexNet (pre-trained model): AlexNet is a convolutional neural network architecture. It achieved remarkable performance in the ImageNet Large Scale Visual Recognition Challenge (ILSVRC) in 2012, demonstrating the power of deep convolutional neural networks for image classification tasks. This model is fine-tuned by replacing the existing last fully connected layer with a new linear layer that takes an input size of 4096 (the size of the previous layer's output) and outputs a size of 2. This modification is performed when fine-tuning a pre-trained model for a different task. By replacing the last fully connected layer, you effectively change the output dimension of the model, making it suitable for a binary classification task with 2 classes.
 
@@ -164,6 +170,8 @@ The dataset is split into 80% training and 20% testing. The model is trained on 
 
     ![1684658085188](docs/image/README/1684658085188.png)
 
+<hr>
+
 4. DenseNet-201 (pre-trained model): DenseNet is a convolutional neural network architecture that was introduced in 2016. It is characterized by its dense connections between layers, which are achieved by concatenating the feature maps of all preceding layers. This architecture has several advantages, including the efficient use of parameters and the smooth flow of gradients, which helps alleviate the vanishing gradient problem. This model is fine-tuned by replacing the last fully connected layer with a new one that outputs 2 classes.
 
 
@@ -183,6 +191,8 @@ The dataset is split into 80% training and 20% testing. The model is trained on 
 
     ![1684658394196](docs/image/README/1684658394196.png)
 
+
+<hr>
 
 # Models' Comparison
 
